@@ -27,5 +27,13 @@ node 'ceph02' {
 }
 
 
+@master node
 
+$ cd /etc/puppet
 
+$ puppet apply manifests/site.pp
+
+For testing on ceph01
+@ceph01 node
+
+$ puppet agent --test
