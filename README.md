@@ -1,5 +1,11 @@
 #hcd-puppet
 
+To install module from tarball
+
+Download ceph-honeycomb-0.0.1.tar.gz 
+$ puppet module install ceph-honeycomb-0.0.1.tar.gz
+
+
 git clone https://github.com/hdatas/hcd-puppet
 
 mv hcd-puppet modules
