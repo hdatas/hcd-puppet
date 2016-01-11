@@ -1,0 +1,13 @@
+{
+  "name": "hcd-honeycombui",
+  "version": "0.1.0",
+  "author": "Krishna Mohan",
+  "summary": null,
+  "license": "Apache 2.0",
+  "source": "https://github.com/hdatas/honeycomb-ui",
+  "issues_url": "https://github.com/hdatas/honeycomb-ui/issues",
+  "project_page": "https://github.com/hdatas/honeycomb-ui",
+  "dependencies": [
+    {"version_requirement":">= 1.0.0","name":"puppetlabs-stdlib"}
+  ]
+}

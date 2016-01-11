@@ -1,14 +1,24 @@
 #hcd-puppet
+'''
+On Master
 
-To install module from tarball
-
-Download ceph-honeycomb-0.0.1.tar.gz 
-$ puppet module install ceph-honeycomb-0.0.1.tar.gz
-
+sudo puppet module install puppetlabs/vcsrepo
+or
+puppet module install puppetlabs-vcsrepo
 
 git clone https://github.com/hdatas/hcd-puppet
 
 mv hcd-puppet modules
+
+/etc/puppet/manifests/site.pp
+#####
+import "honeycombui"
+
+node ceph1 {
+        class { "honeycomb-ui":
+        }
+}
+#####
 
 To incorporate honeycomb module
 ===============================
@@ -43,3 +53,5 @@ For testing on ceph01
 @ceph01 node
 
 $ puppet agent --test
+
+'''
